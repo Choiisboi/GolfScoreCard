@@ -12,6 +12,10 @@ h1 {
     justify-content: center;
  }
 
+.courses, .tees, .addplayer {
+    margin-right: 5px;
+}
+
 .apiinfo {
     display: flex;
     flex-wrap: wrap;
