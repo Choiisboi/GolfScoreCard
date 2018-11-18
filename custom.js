@@ -141,7 +141,7 @@ function totalBox() {
         $('.apiinfo').append(totalBox);
         totalsBox = true;
     } else {
-        console.log('you thought');
+        console.log('it works fam');
     }
 }
 
