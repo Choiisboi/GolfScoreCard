@@ -102,7 +102,7 @@ function addHoles() {
     for (let p = 1; p <= numplayers; p++) {
         for (let h = 0; h <= mycourse.holes.length; h++) {
             $(`#colinfo${h + 1}`).append(`<label class="player-container">
-            <span class="name${p}">Player ${p}</span><input onchange="totals(this)" type="text" id="p${p}h${h + 1}"/></label>`);
+            <span class="name${p}">Player ${p}</span><i class="fas fa-pen" onclick="editname(this)"></i><input onchange="totals(this)" type="text" id="p${p}h${h + 1}"/></label>`);
         }
     }
     for (let h = 0; h <= mycourse.holes.length; h++) {
@@ -112,6 +112,11 @@ function addHoles() {
     addPar();
     addHcp();
     $('.addPlayer').css('display', 'inline');
+}
+
+function editname(e) {
+    let nameLabel = $(e).parent().find("span");
+    $(`.${nameLabel.attr("class")}`).html(newName);
 }
 
 function addPlayer() {
