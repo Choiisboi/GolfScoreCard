@@ -1,0 +1,23 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.apiinfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colinfoumn{
+    margin: 10px;
+}
+
+.totals {
+    background: radial-gradient(yellow, lightgreen,greenyellow);
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
