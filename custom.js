@@ -44,7 +44,7 @@ function loadCourse(courseId) {
         type: 'GET',
         success: response => {
             mycourse = response.data;
-            displayHolecolinfoumns();
+            holes();
             totalBox();
 
             $('.tees').html('');
@@ -63,7 +63,7 @@ function chooseTee(e) {
 }
 
 //calling down things like the par, handicap, yards ,and other info from the api
-function displayHolecolinfoumns() {
+function holes() {
     $('.apiinfo').html('');
     for (let i = 0; i < mycourse.holes.length; i++) {
         $('.apiinfo').append(`<div id="colinfo${i + 1}" class="colinfoumn"><div class="hole-label">Hole ${i + 1}<div></div>`);
