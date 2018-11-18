@@ -2,6 +2,11 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+h1 {
+    display: block;
+    text-align: center;
+}
+
 .apiinfo {
     display: flex;
     flex-wrap: wrap;
