@@ -7,6 +7,11 @@ h1 {
     text-align: center;
 }
 
+.loadingscreen {
+    display: flex;
+    justify-content: center;
+ }
+
 .apiinfo {
     display: flex;
     flex-wrap: wrap;
