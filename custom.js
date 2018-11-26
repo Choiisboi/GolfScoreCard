@@ -117,7 +117,7 @@ function addHoles() {
 function editname(e) {
     let editedname = prompt('Change ur name. Lets keep it clean.');
     let nameLabel = $(e).parent().find("span");
-    $(`.${nameLabel.attr("class")}`).html(editname);
+    $(`.${nameLabel.attr("class")}`).html(editedname);
 }
 
 function addPlayer() {
